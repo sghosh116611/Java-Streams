@@ -114,7 +114,6 @@ public class Pratice {
                 .collect(Collectors.joining(","));
     }
 
-    //Group People by Age - Given a list of Person objects (name, age), group people by age.
     static class People {
         String name;
         int age;
@@ -125,6 +124,7 @@ public class Pratice {
         }
     }
 
+    //Group People by Age - Given a list of Person objects (name, age), group people by age.
     private static Map<Integer, List<People>> groupPeopleByAge(List<People> peopleList) {
         return peopleList.stream()
                 .collect(Collectors.groupingBy(people -> people.age));
